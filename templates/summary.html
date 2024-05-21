@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <link rel="stylesheet" href="/static/styles.css" class="css"/>
+        
+        <div class="container-fluid">
+            <div class="jumbotron">
+              <h1 class="display-4 heading">Text summarization </h1>
+              <p class="lead">Retrive the best summary for the text.</p>
+              <hr class="my-4">
+              <p></p>
+            </div>
+          </div>
+          <div class="container" style="display:flex; justify-content: space-around;">
+            <p class="original_title col-sm-4">Original text</p>
+            <p class="summary_title col-sm-4">Summary</p>
+          </div>
+          <div class="container srt">
+            <p class = "originalTxt col-sm-6 ">{{original_txt}}</p>
+            <p class = "SummaryTxt col-sm-6 ">{{summary}}</p>
+          </div>
+          <div class="container">
+            <button class="btn btn-danger" type="submit">words  :{{len_orig_txt}}</button>
+            <button class="btn btn-success" type="submit">words  :{{len_summary}}</button>
+          </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+</html>
